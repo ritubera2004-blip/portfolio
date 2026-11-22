@@ -114,20 +114,24 @@ export function Silvat() {
             <Reveal delay={0.1}>
               <div className="relative flex h-full flex-col justify-between rounded-2xl border border-[#c2a36b]/25 bg-[#100f0d] p-6 text-[#f7f2e8] sm:p-8">
                 <div className="grain absolute inset-0 rounded-2xl" />
-                {/* Wordmark */}
-                <div className="relative flex items-start justify-between">
-                  <div>
+                {/* Brand mark */}
+                <div className="relative flex items-start justify-between gap-4">
+                  <div className="flex flex-col gap-3">
                     <span className="eyebrow text-[#d8c194]/70">
                       Brand Identity
                     </span>
-                    <h3 className="mt-2 font-display text-5xl tracking-[0.08em] text-gold-gradient sm:text-6xl">
-                      SILVAT
-                    </h3>
-                    <p className="mt-2 font-serif text-sm italic text-[#f7f2e8]/60">
+                    {/* Real SILVAT brand logo */}
+                    <img
+                      src={asset("/silvat/silvat-logo.jpg")}
+                      alt="SILVAT brand logo"
+                      loading="lazy"
+                      className="h-24 w-auto max-w-full rounded-md bg-[#1a1916] object-contain sm:h-28"
+                    />
+                    <p className="font-serif text-sm italic text-[#f7f2e8]/60">
                       {PROJECT.tagline}
                     </p>
                   </div>
-                  <Sparkles className="h-6 w-6 text-[#d8c194]/60" />
+                  <Sparkles className="h-6 w-6 shrink-0 text-[#d8c194]/60" />
                 </div>
 
                 {/* Metrics */}
@@ -182,8 +186,8 @@ export function Silvat() {
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-5">
             <SilvatImage
-              src={asset("/silvat/fabric-detail.png")}
-              alt="SILVAT saree fabric detail with gold zari embroidery"
+              src={asset("/silvat/silvat-bags.jpg")}
+              alt="SILVAT branded shopping bags and product packaging"
               className="aspect-[16/10] w-full rounded-2xl"
             />
           </Reveal>

@@ -153,25 +153,27 @@ export function Hero() {
               <span className="absolute bottom-4 left-4 h-6 w-6 border-b border-l border-[#c2a36b]/50" />
               <span className="absolute bottom-4 right-4 h-6 w-6 border-b border-r border-[#c2a36b]/50" />
 
-              {/* Monogram */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-8 text-center">
-                <span className="eyebrow text-[#d8c194]/70">Brand Mark</span>
-                <span className="font-display text-[7rem] leading-none text-gold-gradient">
-                  RB
-                </span>
-                <span className="h-px w-16 bg-[#c2a36b]/40" />
-                <span className="font-serif text-lg italic text-[#f7f2e8]/80">
-                  {PROFILE.name}
-                </span>
-                <span className="text-[11px] uppercase tracking-[0.25em] text-[#f7f2e8]/40">
+              {/* Professional portrait */}
+              <img
+                src={asset("/ritu-portrait.jpg")}
+                alt="Ritu Bera — professional portrait"
+                className="absolute inset-0 h-full w-full object-cover object-top"
+              />
+              {/* Soft gradient for legibility */}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0c0b0a]/85 via-[#0c0b0a]/30 to-transparent" />
+
+              {/* Name overlay */}
+              <div className="absolute inset-x-0 bottom-12 px-6">
+                <span className="eyebrow text-[#d8c194]">Ritu Bera</span>
+                <p className="mt-1.5 font-serif text-lg italic text-[#f7f2e8]">
                   Marketing · Brand · Strategy
-                </span>
+                </p>
               </div>
 
               {/* Bottom strip */}
               <div className="absolute inset-x-0 bottom-0 flex items-center justify-between border-t border-[#c2a36b]/15 bg-[#0c0b0a]/60 px-5 py-3 text-[10px] uppercase tracking-[0.2em] text-[#f7f2e8]/40 backdrop-blur-sm">
                 <span>Est. 2026</span>
-                <span>Brand Mark · RB</span>
+                <span>Ritu Bera · MBA</span>
               </div>
             </div>
 
